@@ -6,9 +6,9 @@ from comments.src.PowerUtils import PowerUtils
 class TestPowerUtils(unittest.TestCase):
 
     def test_n_basic(self):
-        self.assertEqual(PowerUtils.n(0), 0)
-        self.assertEqual(PowerUtils.n(2), 4)
-        self.assertEqual(PowerUtils.n(-3), 9)
+        self.assertEqual(PowerUtils.square(0), 0)
+        self.assertEqual(PowerUtils.square(2), 4)
+        self.assertEqual(PowerUtils.square(-3), 9)
 
     def test_m_single_value(self):
         self.assertEqual(PowerUtils.sum_of_squares(3, 3), 9)

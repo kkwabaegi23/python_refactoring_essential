@@ -7,12 +7,12 @@ class PowerUtils:
         # Iterate from lower bound (q) to upper bound (z)
         for i in range(q, z + 1):
             # Add square of each number in the range
-            p += PowerUtils.n(i)
+            p += PowerUtils.square(i)
 
         # Return accumulated sum
         return p
 
     @staticmethod
-    def n(k):
+    def square(k):
         # Return square of input
         return k * k

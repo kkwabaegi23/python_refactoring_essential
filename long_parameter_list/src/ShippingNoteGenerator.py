@@ -1,20 +1,7 @@
 class ShippingNoteGenerator:
 
-    def generate_shipping_note(
-        self,
-        customer_first_name,
-        customer_last_name,
-
-        address_line1,
-        address_line2,
-        city,
-        postcode,
-        country,
-
-        order_id,
-        item_description,
-        quantity
-    ):
+    def generate_shipping_note(self, customer_first_name, customer_last_name, address_line1, address_line2, city,
+                               postcode, country, order_id, item_description, quantity, customer):
         full_name = customer_first_name + " " + customer_last_name
 
         address = address_line1 + ", " + (

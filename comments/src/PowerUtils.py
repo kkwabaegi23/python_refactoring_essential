@@ -1,4 +1,4 @@
-class X1:
+class PowerUtils:
 
     @staticmethod
     def m(q, z):
@@ -7,7 +7,7 @@ class X1:
         # Iterate from lower bound (q) to upper bound (z)
         for i in range(q, z + 1):
             # Add square of each number in the range
-            p += X1.n(i)
+            p += PowerUtils.n(i)
 
         # Return accumulated sum
         return p

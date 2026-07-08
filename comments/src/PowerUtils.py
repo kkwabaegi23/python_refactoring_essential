@@ -5,9 +5,9 @@ class PowerUtils:
         p = 0
 
         # Iterate from lower to upper bound 
-        for i in range(lower_bound, upper_bound + 1):
+        for current_value in range(lower_bound, upper_bound + 1):
             # Add square of each number in the range
-            p += PowerUtils.square(i)
+            p += PowerUtils.square(current_value)
 
         # Return accumulated sum
         return p

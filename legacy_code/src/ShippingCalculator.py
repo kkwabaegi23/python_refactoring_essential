@@ -1,4 +1,4 @@
-from legacy_code.src.Order import Order
+from legacy_code.src.Order import Order, OrderService
 
 
 class ShippingCalculator:
@@ -23,7 +23,7 @@ class ShippingCalculator:
             print(e)
             return -1.0
 
+    @staticmethod
     def fetch_order(order_id: int) -> Order:
-        
-        order = Order().get_order(order_id)
+        order = OrderService().get_order(order_id)
         return order

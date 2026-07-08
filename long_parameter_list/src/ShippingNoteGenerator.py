@@ -1,3 +1,11 @@
+from dataclasses import dataclass
+
+@dataclass
+class Customer:
+    first_name: str
+    last_name: str
+
+
 class ShippingNoteGenerator:
 
     def generate_shipping_note(
